@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox alignment="CENTER" layoutX="55.0" layoutY="85.0" prefHeight="603.0" prefWidth="334.0" spacing="30.0">
+         <children>
+            <TextField fx:id="name" prefHeight="24.0" prefWidth="200.0" promptText="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="email" prefHeight="24.0" prefWidth="200.0" promptText="Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phone" prefHeight="24.0" prefWidth="200.0" promptText="Phone ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="address" prefHeight="39.0" prefWidth="319.0" promptText="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="unit" prefHeight="24.0" prefWidth="200.0" promptText="Unit">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="zip" prefHeight="24.0" prefWidth="200.0" promptText="ZIP">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="city" prefHeight="24.0" prefWidth="200.0" promptText="City">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="state" prefHeight="24.0" prefWidth="200.0" promptText="State">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="country" prefHeight="24.0" prefWidth="200.0" promptText="Country">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <TextField fx:id="cc" layoutX="754.0" layoutY="93.0" prefHeight="46.0" prefWidth="334.0" promptText="Credit Card Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <HBox layoutX="757.0" layoutY="157.0" prefHeight="65.0" prefWidth="334.0" spacing="10.0">
+         <children>
+            <TextField fx:id="month" prefHeight="46.0" prefWidth="99.0" promptText="Month">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="year" prefHeight="46.0" prefWidth="107.0" promptText="Year">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cvv" prefHeight="46.0" prefWidth="108.0" promptText="CVV">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="764.0" layoutY="381.0" prefHeight="65.0" prefWidth="334.0" spacing="10.0" />
+      <Label layoutX="760.0" layoutY="297.0" prefHeight="38.0" prefWidth="262.0" text="Item" textFill="#948c8c">
+         <font>
+            <Font name="Tahoma" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="delay" layoutX="764.0" layoutY="510.0" prefHeight="46.0" prefWidth="328.0" promptText="Checkout Delay">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="764.0" layoutY="381.0" prefHeight="124.0" prefWidth="363.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="334.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="keyword" prefHeight="46.0" prefWidth="189.0" promptText="Keyword">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="category" prefHeight="46.0" prefWidth="127.0" promptText="Category">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="477.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="color" prefHeight="46.0" prefWidth="189.0" promptText="Color">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="size" prefHeight="46.0" prefWidth="127.0" promptText="Size">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="save" layoutX="741.0" layoutY="571.0" mnemonicParsing="false" onAction="#saveData" prefHeight="37.0" prefWidth="152.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#f5f5f5">
+         <font>
+            <Font name="Monospaced Regular" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://i.ibb.co/cvJVR7N/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="start" layoutX="827.0" layoutY="638.0" mnemonicParsing="false" onAction="#run" prefHeight="55.0" prefWidth="152.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#f5f5f5">
+         <font>
+            <Font name="Monospaced Regular" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://i.ibb.co/b50QGk5/START.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+     
+      <Button fx:id="google" layoutX="1189.0" layoutY="668.0" mnemonicParsing="false" onAction="#googleLogin" prefHeight="55.0" prefWidth="77.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="WHITE">
+      
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+         	  <ImageView fitHeight="65.0" fitWidth="99.0" preserveRatio="true">
+         <image>
+            <Image url="https://i.ibb.co/Xt4RJxM/google.png" />
+         </image>
+      </ImageView>
+         </graphic>
+         
+         </Button>
+      <TextField fx:id="username" layoutX="757.0" layoutY="222.0" prefHeight="46.0" prefWidth="168.0" promptText="Google Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="931.0" layoutY="222.0" prefHeight="46.0" prefWidth="159.0" promptText="Google Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="useprofile" layoutX="921.0" layoutY="571.0" mnemonicParsing="false" onAction="#useProfile" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#f5f5f5">
+         <font>
+            <Font name="Corbel" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://i.ibb.co/yWfsXrb/Profile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="46.0" fitWidth="153.0" layoutX="55.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.ibb.co/wYkbZhJ/Supreme.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
